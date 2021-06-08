@@ -1,15 +1,33 @@
 Package: rairspace
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Provides access to FAA special use airspaces
+Version: 0.0.0.9002
 Authors@R: 
     person(given = "Jim",
            family = "Higdon",
            role = c("aut", "cre"),
            email = "jimhigdon828@gmail.com",
            comment = c(ORCID = "0000-0001-8900-5729"))
-Description: What the package does (one paragraph).
+Description: Imports or downloads all or part of a Federal Aviation 
+    Administration order on Special Use Airspaces (SUAs). Reads information 
+    on airspace types and lat/lon boundaries, returns a searcheable 
+    database of areas formatted as special features compatible with mapview 
+    or formatted for geometric calculations.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    utils,
+    readtext,
+    pdftools,
+    stats,
+    stringr,
+    tokenizers,
+    sf,
+    mapview,
+    dplyr,
+    rlist
